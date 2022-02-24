@@ -29,3 +29,5 @@ group :development do
   gem "letter_opener"
 end
 
+
+gem "postmark-rails", "~> 0.22.0"

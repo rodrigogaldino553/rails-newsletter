@@ -84,6 +84,7 @@ GEM
     io-wait (0.2.1)
     irb (1.4.1)
       reline (>= 0.3.0)
+    json (2.6.1)
     launchy (2.5.0)
       addressable (~> 2.7)
     letter_opener (1.7.0)
@@ -115,6 +116,11 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
+    postmark (1.22.0)
+      json
+    postmark-rails (0.22.0)
+      actionmailer (>= 3.0.0)
+      postmark (>= 1.21.3, < 2.0)
     public_suffix (4.0.6)
     puma (5.6.2)
       nio4r (~> 2.0)
@@ -175,6 +181,7 @@ PLATFORMS
 DEPENDENCIES
   debug
   letter_opener
+  postmark-rails (~> 0.22.0)
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.2)
   sprockets-rails
