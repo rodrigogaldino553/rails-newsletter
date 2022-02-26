@@ -13,5 +13,6 @@ class WelcomeController < ApplicationController
   end
 
   def email_sent
+    @user_count = User.count
   end
 end
