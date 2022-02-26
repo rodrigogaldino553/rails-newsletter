@@ -1,5 +1,7 @@
 <h1>This is h1 title</h1>
 
 <%= form_with url: welcome_please_send_email_path do |f| %>
- <%= f.submit 'Send e-mail' %>
+  <%= f.text_field :name %>
+  <%= f.email_field :email %>
+  <%= f.submit 'Send e-mail' %>
 <% end %>
