@@ -1,5 +1,5 @@
 class HelloMailer < ApplicationMailer
-  default from: "me@example.com"
+  default from: ENV["EMAIL"]
 
   def welcome_email
     @user = params[:user]

@@ -3,13 +3,15 @@ class WelcomeController < ApplicationController
   end
 
   def please_send_email
+    User.create(name: params[:name], email: params[:email])
     HelloMailer
       .with(user: {
-        name: "jane",
-        email: "jane@example.com"
+        name: params[:name],
+        email: params[:email]
       }).welcome_email.deliver_later
+    redirect_to welcome_email_sent_path
   end
 
-  def sent_email
+  def email_sent
   end
 end
