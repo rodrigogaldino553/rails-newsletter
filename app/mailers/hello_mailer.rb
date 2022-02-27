@@ -1,8 +1,8 @@
 class HelloMailer < ApplicationMailer
-  default from: ENV["EMAIL"]
+  default from: "fake@test.com" # ENV["EMAIL"]
 
   def welcome_email
     @user = params[:user]
-    mail(to: @user[:email], subject: "Welcome to My Awesome Site")
+    mail(to: @user[:email], subject: "Welcome to our Newslleter!")
   end
 end
