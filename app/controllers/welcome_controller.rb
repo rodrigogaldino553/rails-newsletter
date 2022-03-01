@@ -15,4 +15,10 @@ class WelcomeController < ApplicationController
   def email_sent
     @user_count = User.count
   end
+
+  def unsubscribe
+    @user = params[:user]
+    puts "=================="
+    puts @user
+  end
 end
