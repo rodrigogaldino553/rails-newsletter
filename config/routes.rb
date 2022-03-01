@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :emails
   post "welcome/unsubscribe/:user", to: "welcome#unsubscribe"
   get "welcome/index"
 
