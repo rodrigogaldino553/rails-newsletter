@@ -36,3 +36,5 @@ gem "tailwindcss-rails", "~> 2.0"
 gem "dartsass-rails", "~> 0.3.0"
 
 gem "importmap-rails", "~> 1.0"
+
+gem "devise", "~> 4.8"
