@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   post "welcome/please_send_email"
   get "welcome/email_sent"
+  get "welcome/unsubscribe"
 
   root to: "welcome#index"
 end

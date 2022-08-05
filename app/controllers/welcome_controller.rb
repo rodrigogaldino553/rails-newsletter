@@ -18,8 +18,5 @@ class WelcomeController < ApplicationController
   end
 
   def unsubscribe
-    @user = params[:user]
-    puts "=================="
-    puts @user
   end
 end
