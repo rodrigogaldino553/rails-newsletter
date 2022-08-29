@@ -1,10 +1,10 @@
 class WelcomeController < ApplicationController
-  skip_before_action :authenticate_admin!
+  #skip_before_action :authenticate_admin!
   def index
   end
 
   def please_send_email
-    User.create(name: params[:name], email: params[:email])
+    #User.create(name: params[:name], email: params[:email])
     HelloMailer
       .with(user: {
         name: params[:name],
@@ -14,7 +14,8 @@ class WelcomeController < ApplicationController
   end
 
   def email_sent
-    @user_count = User.count
+    20
+    #@user_count = User.count
   end
 
   def unsubscribe
